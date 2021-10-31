@@ -29,5 +29,7 @@ target_link_libraries(TestpHashAudio pHashAudio)
 enable_testing()
 add_test(NAME testproject COMMAND TestpHashAudio)
 
-#install files 
+#install files
+install(TARGETS pHashAudio DESTINATION bin)
 install(FILES AudioHash.h DESTINATION include)
+
